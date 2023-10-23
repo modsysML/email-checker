@@ -1,10 +1,23 @@
 # email checker
+As a user I should be able to use your plugin from the google chrome plugin store (we'll work on deployment later) - I want the ability to do the same as ugly email, once installed I should only work with indexDB to store data regarding emails (for security) but tell what email is being tracked. 
+
+Here is a link to ugly email for context, feel free to play around with it; https://uglyemail.com/?ref=producthunt
+
+It should accomplish the following: 
+
+1. scans through your inbox and looks for emails containing tracking pixels. Tracked emails are labeled with an eyeball(Ugly Email Icon) icon, and the tracking pixel is blocked.
+
+2. All of the Ugly Email data is stored on your browser's IndexDB storage locally. We do not track, transfer, or store any of your information.
+
+This will allow users to know what emails are being watched and which ones aren't while preserving user privacy. Here is a github for inspo - https://github.com/OneClickLab/ugly-email-extension. 
+
+
 
 ### Setting up dev env
 At this point you should've setup your virtual env
 
 **Installation**
-# TODO: Setup install steps for npm/js project
+##### TODO: Setup install steps for npm/js project
 
 **Contribution guidelines**
 
