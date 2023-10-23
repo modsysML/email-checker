@@ -18,7 +18,7 @@ This will allow users to know what emails are being watched and which ones aren'
 At this point you should've setup your virtual env
 
 **Installation**
-# TODO: Setup install steps for npm/js project
+##### TODO: Setup install steps for npm/js project
 
 **Contribution guidelines**
 
