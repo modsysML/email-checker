@@ -39,3 +39,4 @@ Accepted <type> values:
 
 Summary (The first line)
 The first line should not be longer than 75 characters, the second line is always blank and other lines should be wrapped at 80 characters.
+# email-checker
