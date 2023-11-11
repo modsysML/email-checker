@@ -17,7 +17,11 @@ This will allow users to know what emails are being watched and which ones aren'
 At this point you should've setup your virtual env
 
 **Installation**
+<<<<<<< HEAD
 ##### TODO: Setup install steps for npm/js project
+=======
+# TODO: Setup install steps for npm/js project
+>>>>>>> 3923ca8 (new: init repo config)
 
 **Contribution guidelines**
 
@@ -39,4 +43,7 @@ Accepted <type> values:
 
 Summary (The first line)
 The first line should not be longer than 75 characters, the second line is always blank and other lines should be wrapped at 80 characters.
+<<<<<<< HEAD
 # email-checker
+=======
+>>>>>>> 3923ca8 (new: init repo config)
