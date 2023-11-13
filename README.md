@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # email checker
 As a user I should be able to use your plugin from the google chrome plugin store (we'll work on deployment later) - I want the ability to do the same as ugly email, once installed I should only work with indexDB to store data regarding emails (for security) but tell what email is being tracked. 
 
@@ -39,3 +40,6 @@ Accepted <type> values:
 
 Summary (The first line)
 The first line should not be longer than 75 characters, the second line is always blank and other lines should be wrapped at 80 characters.
+=======
+# email-checker
+>>>>>>> 238a781 (new: Initial commit)
