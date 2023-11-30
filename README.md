@@ -1,5 +1,5 @@
 # email checker
-As a user I should be able to use your plugin from the google chrome plugin store (we'll work on deployment later) - I want the ability to do the same as ugly email, once installed I should only work with indexDB to store data regarding emails (for security) but tell what email is being tracked. 
+As a user I should be able to use your plugin from the google chrome plugin store (we'll work on deployment later) - I want the ability to do the same as ugly email, once installed I should only work with indexDB to store data regarding emails (for security) but tell what email is being tracked
 
 Here is a link to ugly email for context, feel free to play around with it; https://uglyemail.com/?ref=producthunt
 
