@@ -21,3 +21,5 @@ imgTags.each((index, element) => {
     console.log(`  Alt Text: ${alt || 'N/A'}`);
     console.log('------------------');
 });
+
+//Fetch tracking data
