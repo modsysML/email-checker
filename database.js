@@ -78,8 +78,6 @@ let trackingPattern;
 loadFile(trackerFilePath)
 .then((result) => {
     trackingPattern = result
-    // Use the loaded tracking patterns
-    console.log(trackingPattern);
 
     const request = indexedDB.open('EmailDatabase');
 
