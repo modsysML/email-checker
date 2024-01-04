@@ -1,31 +1,8 @@
-// const fs = require('fs');
-// const cheerio = require('cheerio');
 
-// // Read the HTML file
-// const htmlFilePath = './index.html';
-// const htmlContent = fs.readFileSync(htmlFilePath, 'utf-8');
-
-// // Load HTML content into Cheerio
-// const $ = cheerio.load(htmlContent);
-
-// // Find all <img> tags
-// const imgTags = $('img');
-
-// // Iterate over each <img> tag and print its attributes
-// imgTags.each((index, element) => {
-//     const src = $(element).attr('src');
-//     const alt = $(element).attr('alt');
-
-//     console.log(`Image ${index + 1}:`);
-//     console.log(`  Source: ${src}`);
-//     console.log(`  Alt Text: ${alt || 'N/A'}`);
-//     console.log('------------------');
-// });
 
 //Fetch tracking data
-document.addEventListener('DOMContentLoaded', function () {
-    // Load the JSON file containing tracking pixel URLs
-    fetch('/tracker.json')
+function trackEmails(trackerJsonUrl, callback) {
+    fetch(trackerJsonUrl)
         .then(response => response.json())
         .then(data => {
             // Get all images in the document
@@ -40,16 +17,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 if (isTracked) {
-                    // Mark the email with a specific class or perform any desired action
-                    const icon = document.createElement('i');
-                    icon.classList.add('fa-solid', 'fa-hurricane');
-
-                    // Append the icon to the same parent element as the original image
-                    image.parentNode.appendChild(icon);
+                    // Execute the callback with the tracked image
+                    callback(image);
                 }
             });
         })
         .catch(error => console.error('Error loading tracker.json:', error));
+}
+
+// Usage
+document.addEventListener('DOMContentLoaded', function () {
+    trackEmails('/tracker.json', function (trackedImage) {
+        // Mark the email with a specific class or perform any desired action
+        const icon = document.createElement('i');
+        icon.classList.add('fa-solid', 'fa-hurricane');
+
+        // Append the icon to the same parent element as the original image
+        trackedImage.parentNode.appendChild(icon);
+    });
 });
 
 // Reload the page every 2.5 seconds (2500 milliseconds)
