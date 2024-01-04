@@ -51,7 +51,7 @@ function storeEmail(emailData) {
     }
 }
 
-function trackEmails(trackerJsonUrl, callback) {
+export function trackEmails(trackerJsonUrl, callback) {
     fetch(trackerJsonUrl)
         .then(response => response.json())
         .then(data => {
@@ -76,4 +76,4 @@ function trackEmails(trackerJsonUrl, callback) {
 }
 
 
-module.exports = {trackEmails};
+//module.exports = {trackEmails};
